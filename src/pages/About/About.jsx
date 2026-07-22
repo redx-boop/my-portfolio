@@ -1,3 +1,4 @@
+import aboutImage from '../../assets/images/IMG_0038.JPEG';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import './About.css';
 
@@ -15,26 +16,25 @@ function About() {
             <div className="about-section">
               <h3>Who I Am</h3>
               <p>
-                I am a software developer based in Seattle, Washington. I started
-                programming in high school, building simple scripts to automate
-                homework assignments, and have been hooked ever since. I studied
-                computer science at the University of Washington, where I learned
-                the fundamentals of software engineering, algorithms, and system design.
+                I am a software developer interested in building practical systems
+                that solve real-world problems. I enjoy creating web applications
+                from frontend interfaces to backend APIs and databases. My work
+                focuses on clean code, usability, and continuous improvement as
+                I grow my experience.
               </p>
               <p>
-                Outside of coding, I enjoy reading about history, hiking the
-                Pacific Northwest trails, and experimenting with coffee brewing
-                methods. I believe that good software comes from understanding
-                the people who use it, which is why I spend as much time listening
-                to users as I do writing code.
+                I started programming in high school and have been building
+                projects ever since. Each project teaches me something new about
+                software design, user behavior, or the technologies I work with.
+                I believe that good software comes from understanding the people
+                who use it.
               </p>
             </div>
 
             <div className="about-section">
               <h3>Education</h3>
               <ul>
-                <li><strong>B.S. Computer Science</strong> - University of Washington, 2022 - 2026</li>
-                <li><strong>A.S. Computer Science</strong> - Seattle Central College, 2020 - 2022</li>
+                <li><strong>Computer Science</strong> - 2022 - 2026</li>
               </ul>
             </div>
 
@@ -42,55 +42,52 @@ function About() {
               <h3>Career Goals</h3>
               <p>
                 I am looking for opportunities where I can contribute to meaningful
-                projects while continuing to grow as an engineer. I am particularly
-                interested in roles that involve full-stack development, systems
-                design, and developer tooling. In the long term, I want to work on
-                software that helps other developers build better products.
+                projects while continuing to grow as a developer. I am particularly
+                interested in roles that involve full-stack development and building
+                tools that make a difference for their users.
               </p>
             </div>
           </div>
 
           <div>
+            <div className="about-photo">
+              <img src={aboutImage} alt="Mugisha Chrispin" />
+            </div>
+
             <div className="about-section">
               <h3>Languages</h3>
               <ul>
-                <li>JavaScript / TypeScript</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>HTML / CSS</li>
+                <li>SQL</li>
               </ul>
             </div>
 
             <div className="about-section">
               <h3>Frameworks &amp; Libraries</h3>
               <ul>
-                <li>React / React Native</li>
-                <li>Vue.js</li>
-                <li>Node.js / Express</li>
-                <li>Django / Flask</li>
-                <li>Spring Boot</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
               </ul>
             </div>
 
             <div className="about-section">
-              <h3>Databases &amp; Tools</h3>
+              <h3>Tools</h3>
               <ul>
-                <li>PostgreSQL / MySQL</li>
-                <li>MongoDB / Redis</li>
-                <li>Docker / Kubernetes</li>
-                <li>AWS / GCP</li>
-                <li>Git / GitHub Actions</li>
+                <li>Git / GitHub</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+                <li>Docker</li>
               </ul>
             </div>
 
             <div className="about-section">
               <h3>Experience</h3>
               <ul>
-                <li><strong>Student Software Developer</strong> - UW CSE Department, Sep 2024 - Present</li>
                 <li><strong>Freelance Web Developer</strong> - Self-employed, Jun 2023 - Present</li>
-                <li><strong>IT Intern</strong> - Seattle Public Schools, Jun 2022 - Aug 2022</li>
+                <li><strong>Personal Projects</strong> - Solo Developer, Jan 2023 - May 2023</li>
               </ul>
             </div>
           </div>

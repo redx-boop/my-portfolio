@@ -55,7 +55,7 @@ function Navbar() {
             handleNavClick('#home');
           }}
         >
-          AC
+          MC
         </a>
 
         <button

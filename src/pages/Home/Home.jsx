@@ -1,52 +1,46 @@
+import heroImage from '../../assets/images/IMG_0130.JPEG';
 import Button from '../../components/Button/Button';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import './Home.css';
 
 const TECH_STACK = [
-  'JavaScript', 'TypeScript', 'React', 'Node.js', 'Python',
-  'PostgreSQL', 'MongoDB', 'Docker', 'Git', 'Figma',
+  'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React',
+  'Node.js', 'Express.js', 'MySQL', 'Git', 'Figma', 'Docker',
 ];
 
 const FEATURED_PROJECTS = [
   {
-    name: 'School Management System',
-    description: 'A comprehensive platform for managing student records, attendance, grades, and communication between teachers and parents.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Redis'],
-    challenge: 'Handling concurrent data updates and maintaining data consistency across multiple school departments.',
-    solution: 'Implemented optimistic UI updates with a queue-based sync system and database transactions for critical operations.',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    name: 'Kora Flow',
+    description: 'A modern web application built with React focusing on clean UI and user experience.',
+    technologies: ['React', 'JavaScript', 'CSS3'],
+    github: '#',
+    demo: 'https://kora-flow-ektr.vercel.app/',
   },
   {
-    name: 'Inventory Management System',
-    description: 'Real-time inventory tracking system with barcode scanning, automated reordering, and detailed analytics dashboards.',
-    technologies: ['Vue.js', 'Express', 'MongoDB', 'Socket.io'],
-    challenge: 'Ensuring accurate real-time stock levels across multiple warehouse locations.',
-    solution: 'Built a WebSocket-based event system that propagates inventory changes instantly with conflict resolution.',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    name: 'Mizero Inventory System',
+    description: 'A school inventory management system that helps departments manage stock, borrowing, returning, reports, users, and inventory operations.',
+    technologies: ['React', 'Node.js', 'MySQL', 'Express.js'],
+    github: '#',
+    demo: 'https://mizero.vercel.app/',
   },
   {
-    name: 'Restaurant Management System',
-    description: 'End-to-end solution for restaurant operations including POS, table management, online ordering, and staff scheduling.',
-    technologies: ['React', 'Django', 'PostgreSQL', 'Docker'],
-    challenge: 'Integrating online orders with in-house POS without double-booking or inventory mismatches.',
-    solution: 'Designed a unified order pipeline with a two-phase commit pattern to synchronize online and in-store orders.',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    name: 'Health Business Website',
+    description: 'A responsive healthcare business website designed with modern layouts, smooth navigation, and professional presentation.',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+    github: '#',
+    demo: 'https://health-business-website.vercel.app/',
   },
 ];
 
 function Home() {
   return (
     <>
-      {/* Hero */}
       <section className="hero" id="home">
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1>Alex Chen</h1>
+              <h1>Mugisha Chrispin</h1>
               <p className="hero-title">
                 Software Developer | UI/UX Designer | Backend Developer
               </p>
@@ -65,13 +59,12 @@ function Home() {
               </div>
             </div>
             <div className="hero-photo">
-              <span>AC</span>
+              <img src={heroImage} alt="Mugisha Chrispin" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Brief */}
       <section className="section section-alt" id="home-about">
         <div className="container">
           <SectionTitle
@@ -80,18 +73,16 @@ function Home() {
           />
           <div className="home-about">
             <p>
-              I am a software developer with experience building web applications
-              across the full stack. I enjoy working on projects that require
-              thoughtful problem-solving and clean implementation. Whether it is
-              designing a database schema, debugging a tricky frontend issue, or
-              figuring out how to make a UI feel more natural, I approach each
-              task with the same level of care and attention to detail.
+              I am a software developer interested in building practical systems
+              that solve real-world problems. I enjoy creating web applications
+              from frontend interfaces to backend APIs and databases. My work
+              focuses on clean code, usability, and continuous improvement as
+              I grow my experience.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Tech Stack */}
       <section className="section" id="home-tech">
         <div className="container">
           <SectionTitle
@@ -108,7 +99,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Featured Projects */}
       <section className="section section-alt" id="home-projects">
         <div className="container">
           <SectionTitle

@@ -4,13 +4,6 @@ import './Experience.css';
 
 const EXPERIENCES = [
   {
-    date: 'Sep 2024 - Present',
-    title: 'University of Washington',
-    role: 'Student Software Developer',
-    description:
-      'Working with the Computer Science department to develop and maintain internal tools used by faculty and students. Built a course registration dashboard that reduced scheduling conflicts by 30%. Collaborated with a team of four developers using Agile methodology.',
-  },
-  {
     date: 'Jun 2023 - Present',
     title: 'Freelance Projects',
     role: 'Full-Stack Developer',
@@ -26,10 +19,10 @@ const EXPERIENCES = [
   },
   {
     date: 'Jun 2022 - Aug 2022',
-    title: 'Seattle Public Schools',
-    role: 'IT Intern',
+    title: 'IT Intern',
+    role: 'IT Support',
     description:
-      'Provided technical support across 15 schools. Assisted with network infrastructure upgrades, deployed new workstation imaging procedures, and created documentation that reduced ticket resolution time by 20%.',
+      'Provided technical support and assisted with network infrastructure, system upgrades, and documentation that improved team efficiency.',
   },
 ];
 

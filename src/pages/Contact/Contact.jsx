@@ -110,8 +110,8 @@ function Contact() {
           <div className="contact-info">
             <div className="contact-info-item">
               <span className="label">Email</span>
-              <a href="mailto:alex.chen@example.com" className="value">
-                alex.chen@example.com
+              <a href="mailto:mugishasting@gmail.com" className="value">
+                mugishasting@gmail.com
               </a>
             </div>
 
@@ -119,14 +119,14 @@ function Contact() {
 
             <div className="contact-info-item">
               <span className="label">Phone</span>
-              <span className="value">(206) 555-0123</span>
+              <span className="value">(250) 7930 45 460</span>
             </div>
 
             <div className="contact-divider"></div>
 
             <div className="contact-info-item">
               <span className="label">Location</span>
-              <span className="value">Seattle, WA</span>
+              <span className="value">Kigali, Rwanda</span>
             </div>
 
             <div className="contact-divider"></div>
@@ -134,12 +134,12 @@ function Contact() {
             <div className="contact-info-item">
               <span className="label">GitHub</span>
               <a
-                href="https://github.com/alexchen"
+                href="https://github.com/redx-boop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="value"
               >
-                github.com/alexchen
+                github.com/redx-boop
               </a>
             </div>
 
@@ -148,12 +148,12 @@ function Contact() {
             <div className="contact-info-item">
               <span className="label">LinkedIn</span>
               <a
-                href="https://linkedin.com/in/alexchen"
+                href="https://www.linkedin.com/in/mugisha-chrispin-16b913423/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="value"
               >
-                linkedin.com/in/alexchen
+                linkedin.com/in/mugisha-chrispin-16b913423
               </a>
             </div>
           </div>

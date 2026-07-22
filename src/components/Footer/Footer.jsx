@@ -10,9 +10,8 @@ const QUICK_LINKS = [
 ];
 
 const SOCIAL_LINKS = [
-  { label: 'GH', href: 'https://github.com' },
-  { label: 'LI', href: 'https://linkedin.com' },
-  { label: 'TW', href: 'https://twitter.com' },
+  { label: 'GH', href: 'https://github.com/redx-boop' },
+  { label: 'LI', href: 'https://www.linkedin.com/in/mugisha-chrispin-16b913423/' },
 ];
 
 function Footer() {
@@ -21,7 +20,7 @@ function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h3>Alex Chen</h3>
+            <h3>Mugisha Chrispin</h3>
             <p>
               Software developer focused on building reliable, user-friendly applications
               with clean code and thoughtful design.
@@ -58,7 +57,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Alex Chen. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mugisha Chrispin. All rights reserved.</p>
           <p className="closing">Built with care, one component at a time.</p>
         </div>
       </div>

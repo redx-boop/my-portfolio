@@ -4,50 +4,35 @@ import './Projects.css';
 
 const PROJECTS = [
   {
-    name: 'School Management System',
-    description: 'A comprehensive platform for managing student records, attendance tracking, grade management, and teacher-parent communication. Used by three schools across the district.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'Docker'],
-    challenge: 'Handling concurrent data updates and maintaining data consistency across multiple school departments with different access levels.',
-    solution: 'Implemented optimistic UI updates with a queue-based sync system and database transactions for critical operations. Used role-based access control to secure sensitive data.',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    name: 'Kora Flow',
+    description: 'A modern web application built with React focusing on clean UI and user experience. Features responsive design, component-based architecture, and efficient state management.',
+    technologies: ['React', 'JavaScript', 'CSS3'],
+    github: '#',
+    demo: 'https://kora-flow-ektr.vercel.app/',
   },
   {
-    name: 'Inventory Management System',
-    description: 'Real-time inventory tracking system with barcode scanning integration, automated reorder alerts, and detailed analytics dashboards for warehouse managers.',
-    technologies: ['Vue.js', 'Express', 'MongoDB', 'Socket.io', 'Redis'],
-    challenge: 'Ensuring accurate real-time stock levels across multiple warehouse locations with sub-second latency requirements.',
-    solution: 'Built a WebSocket-based event system that propagates inventory changes instantly with conflict resolution. Implemented a read-optimized caching layer using Redis.',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    name: 'Mizero Inventory System',
+    description: 'A school inventory management system that helps departments manage stock, borrowing, returning, reports, users, and inventory operations. Streamlines administrative workflows and reduces paperwork.',
+    technologies: ['React', 'Node.js', 'Express.js', 'MySQL'],
+    github: '#',
+    demo: 'https://mizero.vercel.app/',
   },
   {
-    name: 'Restaurant Management System',
-    description: 'End-to-end solution for restaurant operations including POS, table management, online ordering, inventory tracking, and staff scheduling.',
-    technologies: ['React', 'Django', 'PostgreSQL', 'Docker', 'Stripe'],
-    challenge: 'Integrating online orders with in-house POS without double-booking or inventory mismatches, especially during peak hours.',
-    solution: 'Designed a unified order pipeline with a two-phase commit pattern to synchronize online and in-store orders. Added a fallback queue for offline resilience.',
-    github: 'https://github.com',
-    demo: 'https://example.com',
-  },
-  {
-    name: 'Healthcare System',
-    description: 'A secure patient management platform with appointment scheduling, medical record keeping, prescription management, and telemedicine capabilities.',
-    technologies: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'AWS'],
-    challenge: 'Meeting strict HIPAA compliance requirements while keeping the application fast and developer-friendly to maintain.',
-    solution: 'Used end-to-end encryption for patient data, implemented audit logging for all data access, and built a permission system that enforces the principle of least privilege.',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    name: 'Health Business Website',
+    description: 'A responsive healthcare business website designed with modern layouts, smooth navigation, and professional presentation. Optimized for accessibility and mobile viewing.',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+    github: '#',
+    demo: 'https://health-business-website.vercel.app/',
   },
 ];
 
 function Projects() {
   return (
-    <section className="section" id="projects">
+    <section className="section section-alt" id="projects">
       <div className="container">
         <SectionTitle
           title="Projects"
-          subtitle="A collection of projects I have built, each with its own set of challenges and solutions."
+          subtitle="A collection of projects I have built. Each one taught me something new."
         />
         <div className="projects-grid">
           {PROJECTS.map((project) => (

@@ -20,22 +20,31 @@ function ProjectCard({ project }) {
           ))}
         </div>
 
-        <div className="project-details">
-          <p>
-            <strong>Challenge:</strong> {project.challenge}
-          </p>
-          <p>
-            <strong>Solution:</strong> {project.solution}
-          </p>
-        </div>
+        {project.challenge && project.solution && (
+          <div className="project-details">
+            <p>
+              <strong>Challenge:</strong> {project.challenge}
+            </p>
+            <p>
+              <strong>Solution:</strong> {project.solution}
+            </p>
+          </div>
+        )}
 
         <div className="project-links">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a href={project.demo} target="_blank" rel="noopener noreferrer">
-            Live Demo
-          </a>
+          {project.github && project.github !== '#' && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          )}
+          {project.github === '#' && (
+            <span className="project-links-disabled">GitHub</span>
+          )}
+          {project.demo && (
+            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </div>
