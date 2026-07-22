@@ -73,6 +73,14 @@ const FEATURED_PROJECTS = [
     demo: 'https://schoolpath-gateway.vercel.app/',
     image: '/images/schoolpath-screenshot.png',
   },
+  {
+    name: 'ClearCart Express',
+    description: 'A modern e-commerce web application designed to provide a smooth online shopping experience with clean product presentation and easy navigation.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Vite'],
+    github: '#',
+    demo: 'https://clear-cart-express.vercel.app/',
+    image: '/images/clearcart-screenshot.png',
+  },
 ];
 
 function Home() {
