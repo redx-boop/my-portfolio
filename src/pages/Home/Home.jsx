@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import heroImage from '../../assets/images/IMG_0130.JPEG';
 import Button from '../../components/Button/Button';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import ProjectModal from '../../components/ProjectModal/ProjectModal';
 import './Home.css';
 
 const TECH_STACK = [
@@ -31,9 +33,51 @@ const FEATURED_PROJECTS = [
     github: '#',
     demo: 'https://health-business-website.vercel.app/',
   },
+  {
+    name: 'Smart Rwanda',
+    description: 'A modern digital platform developed to showcase smart technology solutions for Rwanda.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Vite'],
+    github: '#',
+    demo: 'https://smart-rwanda.vercel.app/',
+    image: '/images/smart-rwanda-screenshot.png',
+  },
+  {
+    name: 'AgriConnect Rwanda',
+    description: 'A modern digital agriculture platform that connects farmers, buyers, and agricultural stakeholders through an intelligent online marketplace.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Vite'],
+    github: '#',
+    demo: 'https://agriconnect-rwanda-oqli.vercel.app/',
+    image: '/images/agriconnect-screenshot.png',
+  },
+  {
+    name: 'WildWatch Guardian',
+    description: 'A wildlife conservation platform designed to support environmental protection through technology. Provides a responsive interface for monitoring wildlife and raising conservation awareness.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Vite'],
+    github: '#',
+    demo: 'https://wild-watch-guardian.vercel.app/',
+    image: '/images/wildwatch-screenshot.png',
+  },
+  {
+    name: 'Rwanda Ride Secure',
+    description: 'A modern transportation platform concept focused on safe, reliable, and user-friendly ride services.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Vite'],
+    github: '#',
+    demo: 'https://rwanda-ride-secure.vercel.app/',
+    image: '/images/rwanda-ride-screenshot.png',
+  },
+  {
+    name: 'SchoolPath Gateway',
+    description: 'An education-focused digital platform designed to improve access to learning resources and simplify educational processes through technology.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Vite'],
+    github: '#',
+    demo: 'https://schoolpath-gateway.vercel.app/',
+    image: '/images/schoolpath-screenshot.png',
+  },
 ];
 
 function Home() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <>
       <section className="hero" id="home">
@@ -107,7 +151,11 @@ function Home() {
           />
           <div className="home-projects-grid">
             {FEATURED_PROJECTS.map((project) => (
-              <ProjectCard key={project.name} project={project} />
+              <ProjectCard
+                key={project.name}
+                project={project}
+                onClick={() => setSelectedProject(project)}
+              />
             ))}
           </div>
           <div className="home-view-all">
@@ -115,6 +163,13 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </>
   );
 }

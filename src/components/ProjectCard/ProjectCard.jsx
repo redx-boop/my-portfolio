@@ -1,8 +1,8 @@
 import './ProjectCard.css';
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, onClick }) {
   return (
-    <div className="project-card">
+    <div className="project-card" onClick={onClick} role="button" tabIndex={0} onKeyDown={(e) => e.key === 'Enter' && onClick?.()}>
       <div className="project-card-image">
         {project.image ? (
           <img src={project.image} alt={project.name} />
@@ -31,7 +31,7 @@ function ProjectCard({ project }) {
           </div>
         )}
 
-        <div className="project-links">
+        <div className="project-links" onClick={(e) => e.stopPropagation()}>
           {project.github && project.github !== '#' && (
             <a href={project.github} target="_blank" rel="noopener noreferrer">
               GitHub
